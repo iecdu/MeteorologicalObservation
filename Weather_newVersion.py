@@ -10,6 +10,7 @@ import conn_mysql
 def MeteorologicalObservation(data):
 
     data = xm.parse(data)        
+    
     root = data.getroot() # 不需设立节点?
  
     for station in data.findall(".//{urn:cwa:gov:tw:cwacommon:0.1}Station"): #""" 路径.//看不懂 ，推测类似根目录"""
